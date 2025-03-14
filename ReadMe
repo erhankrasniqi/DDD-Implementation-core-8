@@ -1,0 +1,7 @@
+1. Change the connectionstring  StarMart.Api project appsettings.json file.
+
+2. Set the StarMart.Api as startup project.
+
+3. Inside the Visual Studio, on the Package Manager Console select the "StarMart.Infrastructure" project.
+
+4. Run the migrations by using the update-database command.
