@@ -49,7 +49,7 @@ namespace StarMart.Tests.Handlers
 
             _mockUnitOfWork
       .Setup(u => u.Save(It.IsAny<CancellationToken>()))
-      .ReturnsAsync(1); // Ose një numër tjetër si 1, që tregon sukses
+      .ReturnsAsync(1);  
 
 
             // Act
