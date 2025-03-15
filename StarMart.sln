@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarMart.Domain", "StarMart.Domain\StarMart.Domain.csproj", "{5465C9B6-BE28-47EB-8A63-72A55674E9E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarMart.Domain", "StarMart.Domain\StarMart.Domain.csproj", "{5465C9B6-BE28-47EB-8A63-72A55674E9E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarMart.Infrastructure", "StarMart.Infrastructure\StarMart.Infrastructure.csproj", "{47C82975-AFD2-448A-80D9-E9863CE08A2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarMart.Infrastructure", "StarMart.Infrastructure\StarMart.Infrastructure.csproj", "{47C82975-AFD2-448A-80D9-E9863CE08A2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarMart.Application", "StarMart.Application\StarMart.Application.csproj", "{CB374FBF-EF99-478B-B14E-A4C9E30BABBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarMart.Application", "StarMart.Application\StarMart.Application.csproj", "{CB374FBF-EF99-478B-B14E-A4C9E30BABBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarMart.SharedKernel", "StarMart.SharedKernel\StarMart.SharedKernel.csproj", "{6D9618D0-67B0-460B-BCAF-411F8F7DFCCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarMart.SharedKernel", "StarMart.SharedKernel\StarMart.SharedKernel.csproj", "{6D9618D0-67B0-460B-BCAF-411F8F7DFCCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarMart.Api", "StarMart.Api\StarMart.Api.csproj", "{C39F6DFD-F93D-4D95-9888-B89EE6FAE93E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarMart.Api", "StarMart.Api\StarMart.Api.csproj", "{C39F6DFD-F93D-4D95-9888-B89EE6FAE93E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarMart.Tests", "StarMart.Tests\StarMart.Tests.csproj", "{D35DF217-B6C5-44ED-973C-C9E3255510C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{C39F6DFD-F93D-4D95-9888-B89EE6FAE93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C39F6DFD-F93D-4D95-9888-B89EE6FAE93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C39F6DFD-F93D-4D95-9888-B89EE6FAE93E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35DF217-B6C5-44ED-973C-C9E3255510C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35DF217-B6C5-44ED-973C-C9E3255510C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35DF217-B6C5-44ED-973C-C9E3255510C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35DF217-B6C5-44ED-973C-C9E3255510C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A46A5A55-2519-4EB6-851B-2AD0271521E9}
 	EndGlobalSection
 EndGlobal
