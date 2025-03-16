@@ -1,15 +1,10 @@
-﻿using NUnit.Framework;
-using Moq;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using Moq;
 using StarMart.Application.Features.CreateCustomer;
-using StarMart.Application.Responses;
 using StarMart.Domain.Aggregates.CustomerAggregate;
 using StarMart.Infrastructure.Contracts;
-using Bogus;
+using Bogus; 
 
-namespace StarMart.Tests.Handlers
+namespace StarMart.Tests.Handlers.Customers
 {
     [TestFixture]
     public class CreateCustomerCommandHandlerTests
@@ -26,7 +21,7 @@ namespace StarMart.Tests.Handlers
 
             _handler = new CreateCustomerCommandHandler(
                 _mockCustomerRepo.Object,
-                _mockUnitOfWork.Object);
+                _mockUnitOfWork.Object);   
         }
 
         [Test]
@@ -41,15 +36,15 @@ namespace StarMart.Tests.Handlers
                 .RuleFor(c => c.Address, f => f.Address.StreetAddress());
 
             var command = faker.Generate();
-             
+
 
             _mockCustomerRepo
                 .Setup(r => r.Add(It.IsAny<Customer>(), It.IsAny<CancellationToken>()))
                 .Returns(Task.CompletedTask);
 
             _mockUnitOfWork
-      .Setup(u => u.Save(It.IsAny<CancellationToken>()))
-      .ReturnsAsync(1);  
+                .Setup(u => u.Save(It.IsAny<CancellationToken>()))
+                .ReturnsAsync(1);
 
 
             // Act
