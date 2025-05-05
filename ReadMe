@@ -1,3 +1,29 @@
+I’ve just finished building C# .NET Core 8 application, and I’m really excited to share it! I’ve applied the latest best practices in software development and design to create something powerful. Here’s a quick overview of what’s included in the project:
+
+🔹 Domain Driven Design (DDD) to ensure a deep focus on domain logic and scalability for future growth.
+🔹 CQRS (Command Query Responsibility Segregation) to separate commands and queries, enabling a clear and maintainable architecture.
+🔹 Entity Framework for data persistence and Repository Pattern for managing database access, ensuring modularity and testability.
+🔹 Unit of Work Pattern to ensure data consistency and integrity during various operations, especially in multi-operation environments.
+🔹 The ability to iterate over customer orders by order date, optimizing how data is managed and reviewed.
+🔹 I have also implemented two new features introduced in .NET Core 8 to enhance the application’s efficiency and structure:
+
+builder.Services.AddProblemDetails(): A powerful addition to standardize error handling across the application. It enables more structured and consistent API error responses, improving the overall user experience in case of failures.
+
+builder.Services.AddExceptionHandler<CustomExceptionHandler>(): A new way to manage global exception handling. This feature allows for better control and customization of how exceptions are handled across the application, ensuring that error responses are consistent and tailored to the specific needs of the project.
+
+This project is a powerful example of how advanced design practices can be used to build sustainable, flexible, and scalable applications. 💻
+
+To view the code and learn more about the implementation, check out the GitHub repo https://lnkd.in/dKY-_cFv
+
+In the future, this project will evolve to include: 
+🔜 NUnit for reliable application testing,
+🔜 XML documentation to ensure complete and clear code documentation,
+🔜 Message broker for efficient communication between services,
+🔜 Domain events to improve interaction and dynamic responses in the application.
+
+
+=============
+
 1. Change the connectionstring  StarMart.Api project appsettings.json file.
 
 2. Set the StarMart.Api as startup project.
@@ -5,3 +31,6 @@
 3. Inside the Visual Studio, on the Package Manager Console select the "StarMart.Infrastructure" project.
 
 4. Run the migrations by using the update-database command.
+
+ 
+
